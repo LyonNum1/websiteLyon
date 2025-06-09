@@ -1,0 +1,30 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#222222"/>
+  
+  <!-- 音乐节海报设计元素 -->
+  <rect x="100" y="100" width="600" height="400" fill="#ff6b6b" rx="10" ry="10"/>
+  
+  <!-- 波形图案 -->
+  <path d="M100,300 Q200,200 300,300 Q400,400 500,300 Q600,200 700,300" stroke="#ffffff" stroke-width="5" fill="none"/>
+  <path d="M100,320 Q200,220 300,320 Q400,420 500,320 Q600,220 700,320" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.7"/>
+  <path d="M100,280 Q200,180 300,280 Q400,380 500,280 Q600,180 700,280" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.7"/>
+  
+  <!-- 文字区域 -->
+  <rect x="150" y="350" width="500" height="120" fill="rgba(0,0,0,0.7)" rx="5" ry="5"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="200" font-family="Arial" font-size="40" font-weight="bold" text-anchor="middle" fill="#ffffff">音乐节海报</text>
+  
+  <!-- 描述文字 -->
+  <text x="400" y="390" font-family="Arial" font-size="20" text-anchor="middle" fill="#ffffff">夏日音乐盛宴</text>
+  <text x="400" y="430" font-family="Arial" font-size="16" text-anchor="middle" fill="#dddddd">动感节奏 激情四射</text>
+  
+  <!-- 装饰元素 -->
+  <circle cx="200" cy="150" r="20" fill="#ffdd59" opacity="0.8"/>
+  <circle cx="600" cy="150" r="25" fill="#5f27cd" opacity="0.8"/>
+  <circle cx="400" cy="120" r="15" fill="#00d2d3" opacity="0.8"/>
+  
+  <!-- 水印 -->
+  <text x="400" y="550" font-family="Arial" font-size="14" text-anchor="middle" fill="#999999">示例图片 - 仅用于展示</text>
+</svg>

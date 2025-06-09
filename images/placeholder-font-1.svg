@@ -1,0 +1,40 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f5f5f5"/>
+  
+  <!-- 字体设计展示区域 -->
+  <rect x="100" y="100" width="600" height="400" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="10" ry="10"/>
+  
+  <!-- 字体名称 -->
+  <text x="400" y="150" font-family="Arial" font-size="30" font-weight="bold" text-anchor="middle" fill="#333333">NOVA 字体设计</text>
+  
+  <!-- 字母展示 -->
+  <text x="150" y="250" font-family="Arial" font-size="100" font-weight="bold" fill="#333333">Aa</text>
+  
+  <!-- 字母表 -->
+  <text x="400" y="230" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333333">ABCDEFGHIJKLM</text>
+  <text x="400" y="270" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333333">NOPQRSTUVWXYZ</text>
+  <text x="400" y="310" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333333">abcdefghijklm</text>
+  <text x="400" y="350" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333333">nopqrstuvwxyz</text>
+  <text x="400" y="390" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333333">0123456789</text>
+  
+  <!-- 字体特性说明 -->
+  <rect x="150" y="420" width="120" height="30" fill="#f0f0f0" rx="5" ry="5"/>
+  <text x="210" y="440" font-family="Arial" font-size="14" text-anchor="middle" fill="#555555">无衬线</text>
+  
+  <rect x="290" y="420" width="120" height="30" fill="#f0f0f0" rx="5" ry="5"/>
+  <text x="350" y="440" font-family="Arial" font-size="14" text-anchor="middle" fill="#555555">现代感</text>
+  
+  <rect x="430" y="420" width="120" height="30" fill="#f0f0f0" rx="5" ry="5"/>
+  <text x="490" y="440" font-family="Arial" font-size="14" text-anchor="middle" fill="#555555">高可读性</text>
+  
+  <rect x="570" y="420" width="120" height="30" fill="#f0f0f0" rx="5" ry="5"/>
+  <text x="630" y="440" font-family="Arial" font-size="14" text-anchor="middle" fill="#555555">多语言支持</text>
+  
+  <!-- 装饰元素 -->
+  <line x1="150" y1="180" x2="650" y2="180" stroke="#e0e0e0" stroke-width="2"/>
+  <line x1="150" y1="410" x2="650" y2="410" stroke="#e0e0e0" stroke-width="2"/>
+  
+  <!-- 水印 -->
+  <text x="400" y="550" font-family="Arial" font-size="14" text-anchor="middle" fill="#999999">示例图片 - 仅用于展示</text>
+</svg>

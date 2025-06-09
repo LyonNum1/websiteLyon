@@ -1,0 +1,42 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- VI设计展示区域 -->
+  <rect x="50" y="50" width="700" height="500" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="10" ry="10"/>
+  
+  <!-- 品牌标志 -->
+  <circle cx="400" cy="150" r="60" fill="#34495e"/>
+  <text x="400" y="170" font-family="Arial" font-size="40" font-weight="bold" text-anchor="middle" fill="#ffffff">B</text>
+  
+  <!-- 名片设计 -->
+  <rect x="150" y="250" width="200" height="120" fill="#ffffff" stroke="#34495e" stroke-width="2" rx="5" ry="5"/>
+  <rect x="150" y="250" width="200" height="30" fill="#34495e"/>
+  <circle cx="170" cy="295" r="15" fill="#34495e"/>
+  <line x1="200" y1="290" x2="330" y2="290" stroke="#34495e" stroke-width="1"/>
+  <line x1="200" y1="310" x2="330" y2="310" stroke="#34495e" stroke-width="1"/>
+  <line x1="200" y1="330" x2="330" y2="330" stroke="#34495e" stroke-width="1"/>
+  
+  <!-- 信封设计 -->
+  <rect x="450" y="250" width="200" height="120" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+  <rect x="450" y="250" width="200" height="30" fill="#34495e"/>
+  <circle cx="470" cy="295" r="15" fill="#34495e"/>
+  
+  <!-- 色彩系统 -->
+  <rect x="150" y="400" width="50" height="50" fill="#34495e" rx="5" ry="5"/>
+  <rect x="210" y="400" width="50" height="50" fill="#3498db" rx="5" ry="5"/>
+  <rect x="270" y="400" width="50" height="50" fill="#2ecc71" rx="5" ry="5"/>
+  <rect x="330" y="400" width="50" height="50" fill="#f1c40f" rx="5" ry="5"/>
+  <rect x="390" y="400" width="50" height="50" fill="#e74c3c" rx="5" ry="5"/>
+  
+  <!-- 字体示例 -->
+  <text x="500" y="410" font-family="Arial" font-size="16" font-weight="bold" fill="#34495e">主标题字体</text>
+  <text x="500" y="435" font-family="Arial" font-size="12" fill="#34495e">副标题字体</text>
+  <text x="500" y="455" font-family="Arial" font-size="10" fill="#34495e">正文字体示例文本</text>
+  
+  <!-- 标题 -->
+  <text x="400" y="520" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#34495e">品牌VI设计系统</text>
+  
+  <!-- 水印 -->
+  <text x="400" y="570" font-family="Arial" font-size="14" text-anchor="middle" fill="#999999">示例图片 - 仅用于展示</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#ffffff"/>
+  
+  <!-- 网格背景 -->
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <rect width="20" height="20" fill="#f9f9f9"/>
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#eeeeee" stroke-width="1"/>
+  </pattern>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  
+  <!-- Logo展示区域 -->
+  <rect x="200" y="100" width="400" height="400" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="10" ry="10"/>
+  
+  <!-- Logo设计 -->
+  <circle cx="400" cy="250" r="100" fill="#3498db"/>
+  <path d="M 350 200 L 450 200 L 400 300 Z" fill="#ffffff"/>
+  <rect x="375" y="300" width="50" height="10" fill="#ffffff" rx="2" ry="2"/>
+  
+  <!-- 公司名称 -->
+  <text x="400" y="350" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333333">SUMMIT</text>
+  <text x="400" y="380" font-family="Arial" font-size="14" text-anchor="middle" fill="#666666">CREATIVE STUDIO</text>
+  
+  <!-- Logo变体 -->
+  <circle cx="250" cy="450" r="30" fill="#3498db"/>
+  <path d="M 235 435 L 265 435 L 250 465 Z" fill="#ffffff"/>
+  
+  <circle cx="350" cy="450" r="30" fill="#ffffff" stroke="#3498db" stroke-width="2"/>
+  <path d="M 335 435 L 365 435 L 350 465 Z" fill="#3498db"/>
+  
+  <circle cx="450" cy="450" r="30" fill="#333333"/>
+  <path d="M 435 435 L 465 435 L 450 465 Z" fill="#ffffff"/>
+  
+  <circle cx="550" cy="450" r="30" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <path d="M 535 435 L 565 435 L 550 465 Z" fill="#333333"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="520" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333333">Logo设计与品牌标识</text>
+  
+  <!-- 水印 -->
+  <text x="400" y="550" font-family="Arial" font-size="14" text-anchor="middle" fill="#999999">示例图片 - 仅用于展示</text>
+</svg>

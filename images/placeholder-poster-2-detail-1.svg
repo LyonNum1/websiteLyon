@@ -1,0 +1,37 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#222222"/>
+  
+  <!-- 音乐节海报设计元素 - 详情视图1 -->
+  <rect x="100" y="50" width="600" height="500" fill="#ff6b6b" rx="10" ry="10"/>
+  
+  <!-- 波形图案 - 更详细 -->
+  <path d="M100,250 Q150,150 200,250 Q250,350 300,250 Q350,150 400,250 Q450,350 500,250 Q550,150 600,250 Q650,350 700,250" stroke="#ffffff" stroke-width="8" fill="none"/>
+  <path d="M100,280 Q150,180 200,280 Q250,380 300,280 Q350,180 400,280 Q450,380 500,280 Q550,180 600,280 Q650,380 700,280" stroke="#ffffff" stroke-width="4" fill="none" opacity="0.7"/>
+  <path d="M100,220 Q150,120 200,220 Q250,320 300,220 Q350,120 400,220 Q450,320 500,220 Q550,120 600,220 Q650,320 700,220" stroke="#ffffff" stroke-width="4" fill="none" opacity="0.7"/>
+  
+  <!-- 音乐元素 -->
+  <circle cx="200" cy="150" r="30" fill="#ffdd59" opacity="0.8"/>
+  <circle cx="600" cy="150" r="40" fill="#5f27cd" opacity="0.8"/>
+  <circle cx="400" cy="120" r="25" fill="#00d2d3" opacity="0.8"/>
+  
+  <!-- 音符 -->
+  <path d="M250,180 L250,130 L260,120 L270,130 L270,180 Z" fill="#ffffff"/>
+  <circle cx="250" cy="180" r="10" fill="#ffffff"/>
+  
+  <path d="M550,200 L550,150 L560,140 L570,150 L570,200 Z" fill="#ffffff"/>
+  <circle cx="550" cy="200" r="10" fill="#ffffff"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="350" font-family="Arial" font-size="50" font-weight="bold" text-anchor="middle" fill="#ffffff">夏日音乐节</text>
+  
+  <!-- 日期和地点 -->
+  <text x="400" y="400" font-family="Arial" font-size="24" text-anchor="middle" fill="#ffffff">2023年8月15-20日</text>
+  <text x="400" y="430" font-family="Arial" font-size="24" text-anchor="middle" fill="#ffffff">城市中心音乐广场</text>
+  
+  <!-- 演出阵容 -->
+  <text x="400" y="470" font-family="Arial" font-size="16" text-anchor="middle" fill="#ffffff">超过50组艺人 · 5个舞台 · 不间断的音乐盛宴</text>
+  
+  <!-- 水印 -->
+  <text x="400" y="550" font-family="Arial" font-size="14" text-anchor="middle" fill="#999999">示例图片 - 仅用于展示</text>
+</svg>

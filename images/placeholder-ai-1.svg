@@ -1,0 +1,50 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#1a1a2e"/>
+  
+  <!-- AI设计展示区域 -->
+  <rect x="100" y="100" width="600" height="400" fill="#16213e" rx="15" ry="15"/>
+  
+  <!-- 抽象AI网络图形 -->
+  <circle cx="250" cy="200" r="20" fill="#4d79ff" opacity="0.9"/>
+  <circle cx="350" cy="150" r="15" fill="#4d79ff" opacity="0.9"/>
+  <circle cx="450" cy="220" r="18" fill="#4d79ff" opacity="0.9"/>
+  <circle cx="550" cy="180" r="12" fill="#4d79ff" opacity="0.9"/>
+  <circle cx="200" cy="300" r="16" fill="#4d79ff" opacity="0.9"/>
+  <circle cx="300" cy="350" r="14" fill="#4d79ff" opacity="0.9"/>
+  <circle cx="400" cy="320" r="20" fill="#4d79ff" opacity="0.9"/>
+  <circle cx="500" cy="280" r="17" fill="#4d79ff" opacity="0.9"/>
+  <circle cx="600" cy="330" r="13" fill="#4d79ff" opacity="0.9"/>
+  
+  <!-- 连接线 -->
+  <line x1="250" y1="200" x2="350" y2="150" stroke="#4d79ff" stroke-width="2" opacity="0.5"/>
+  <line x1="350" y1="150" x2="450" y2="220" stroke="#4d79ff" stroke-width="2" opacity="0.5"/>
+  <line x1="450" y1="220" x2="550" y2="180" stroke="#4d79ff" stroke-width="2" opacity="0.5"/>
+  <line x1="250" y1="200" x2="200" y2="300" stroke="#4d79ff" stroke-width="2" opacity="0.5"/>
+  <line x1="200" y1="300" x2="300" y2="350" stroke="#4d79ff" stroke-width="2" opacity="0.5"/>
+  <line x1="300" y1="350" x2="400" y2="320" stroke="#4d79ff" stroke-width="2" opacity="0.5"/>
+  <line x1="400" y1="320" x2="500" y2="280" stroke="#4d79ff" stroke-width="2" opacity="0.5"/>
+  <line x1="500" y1="280" x2="600" y2="330" stroke="#4d79ff" stroke-width="2" opacity="0.5"/>
+  <line x1="450" y1="220" x2="400" y2="320" stroke="#4d79ff" stroke-width="2" opacity="0.5"/>
+  <line x1="350" y1="150" x2="300" y2="350" stroke="#4d79ff" stroke-width="2" opacity="0.5"/>
+  <line x1="550" y1="180" x2="500" y2="280" stroke="#4d79ff" stroke-width="2" opacity="0.5"/>
+  
+  <!-- 数据流动效果 -->
+  <rect x="150" y="400" width="500" height="30" fill="#0f3460" rx="5" ry="5"/>
+  <rect x="150" y="400" width="300" height="30" fill="#4d79ff" rx="5" ry="5"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="450" font-family="Arial" font-size="30" font-weight="bold" text-anchor="middle" fill="#ffffff">AI生成艺术设计</text>
+  
+  <!-- 描述 -->
+  <text x="400" y="480" font-family="Arial" font-size="16" text-anchor="middle" fill="#e2e2e2">基于深度学习算法的创意视觉生成</text>
+  
+  <!-- 装饰元素 -->
+  <rect x="150" y="150" width="50" height="5" fill="#4d79ff" rx="2" ry="2"/>
+  <rect x="150" y="160" width="30" height="5" fill="#4d79ff" rx="2" ry="2"/>
+  <rect x="600" y="150" width="50" height="5" fill="#4d79ff" rx="2" ry="2" transform="rotate(180 625 152.5)"/>
+  <rect x="620" y="160" width="30" height="5" fill="#4d79ff" rx="2" ry="2"/>
+  
+  <!-- 水印 -->
+  <text x="400" y="550" font-family="Arial" font-size="14" text-anchor="middle" fill="#999999">示例图片 - 仅用于展示</text>
+</svg>

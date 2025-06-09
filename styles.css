@@ -1,0 +1,647 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* 背景元素样式 */
+.background-elements {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.bg-circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.05;
+}
+
+.circle-1 {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(135deg, #4a90e2, #a6c1ee);
+    top: -100px;
+    right: -100px;
+}
+
+.circle-2 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, #4a90e2, #67d1f8);
+    bottom: 10%;
+    left: -50px;
+}
+
+.bg-square {
+    position: absolute;
+    opacity: 0.03;
+    transform: rotate(45deg);
+}
+
+.square-1 {
+    width: 200px;
+    height: 200px;
+    border: 15px solid #4a90e2;
+    top: 40%;
+    right: 10%;
+}
+
+.bg-line {
+    position: absolute;
+    background-color: #4a90e2;
+    opacity: 0.05;
+}
+
+.line-1 {
+    width: 100%;
+    height: 1px;
+    top: 30%;
+}
+
+.line-2 {
+    width: 1px;
+    height: 100%;
+    left: 20%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* 防止图片被拖拽 */
+    /* 使用标准属性和浏览器前缀来禁止拖拽 */
+    -webkit-user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* 禁止选中文本 */
+.portfolio-image {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* 头部样式 */
+header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 导航样式 */
+.category-nav {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.category-nav li a {
+    padding: 0.5rem 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.category-nav li a:hover,
+.category-nav li a.active {
+    color: #4a90e2;
+}
+
+.category-nav li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #4a90e2;
+    transition: width 0.3s ease;
+}
+
+.category-nav li a:hover::after,
+.category-nav li a.active::after {
+    width: 100%;
+}
+
+/* 主要内容区域 */
+main {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* 个人信息区域样式 */
+.profile-section {
+    margin-bottom: 5rem;
+    padding: 3rem 0;
+    position: relative;
+    scroll-margin-top: 100px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.profile-content {
+    max-width: 800px;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1;
+    border-left: 4px solid #4a90e2;
+}
+
+.profile-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -0.5px;
+}
+
+.highlight {
+    color: #4a90e2;
+    position: relative;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: rgba(74, 144, 226, 0.2);
+    z-index: -1;
+}
+
+.slogan {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: #555;
+    font-style: italic;
+    border-left: 3px solid #4a90e2;
+    padding-left: 1rem;
+    line-height: 1.4;
+}
+
+.profile-description {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.profile-description p {
+    margin-bottom: 1rem;
+}
+
+.profile-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.skill-tag {
+    background-color: rgba(74, 144, 226, 0.1);
+    color: #4a90e2;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background-color: #4a90e2;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* 回到顶部按钮 */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+    z-index: 99;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: #3a7bc8;
+    transform: translateY(-5px);
+}
+
+.back-to-top i {
+    font-size: 1.2rem;
+}
+
+/* 作品集部分 */
+.portfolio-section {
+    margin-bottom: 4rem;
+    scroll-margin-top: 100px; /* 为锚点导航提供顶部边距 */
+}
+
+.portfolio-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.portfolio-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #4a90e2;
+}
+
+/* 图片展示容器 */
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+/* 图片项目样式 */
+.gallery-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9; /* 1920*1080的比例 */
+    object-fit: cover;
+    display: block;
+}
+
+/* 保留旧样式以兼容 */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+    padding: 1.5rem;
+    background: white;
+    color: #333;
+    border-radius: 0 0 0 0;
+}
+
+.overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.overlay p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    color: #555;
+}
+
+/* 作品详情样式 */
+.portfolio-details {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 0 0 12px 12px;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.portfolio-details h4 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.portfolio-details h4:first-child {
+    margin-top: 0;
+}
+
+.portfolio-details p {
+    color: #555;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.detail-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 0;
+}
+
+.detail-images img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.detail-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* 移除了放大图片样式和相关动画 */
+
+/* 页脚样式 */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.copyright p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* 媒体查询 - 响应式设计 */
+@media (max-width: 1200px) {
+    .gallery-container {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .logo {
+        margin-bottom: 1rem;
+    }
+    
+    .category-nav {
+        justify-content: center;
+    }
+    
+    .gallery-container {
+        gap: 1.2rem;
+    }
+    
+    .profile-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .slogan {
+        font-size: 1.3rem;
+    }
+    
+    .circle-1 {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .category-nav {
+        gap: 0.8rem;
+    }
+    
+    .category-nav li a {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.9rem;
+    }
+    
+    .gallery-container {
+        gap: 1rem;
+    }
+    
+    .profile-content {
+        padding: 1.5rem;
+    }
+    
+    .profile-content h1 {
+        font-size: 2rem;
+    }
+    
+    .slogan {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .profile-description {
+        font-size: 1rem;
+    }
+    
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .bg-square {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container {
+        gap: 0.8rem;
+    }
+    
+    .gallery-image {
+        margin-bottom: 0.5rem;
+    }
+    
+    main {
+        padding: 1rem 0.5rem;
+    }
+    
+    .profile-section {
+        padding: 1.5rem 0;
+    }
+    
+    .profile-content {
+        padding: 1.2rem;
+        border-left-width: 3px;
+    }
+    
+    .profile-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .slogan {
+        font-size: 1rem;
+        padding-left: 0.8rem;
+        border-left-width: 2px;
+    }
+    
+    .profile-skills {
+        gap: 0.5rem;
+    }
+    
+    .skill-tag {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    .bg-line {
+        display: none;
+    }
+}
+    
+    main {
+        padding: 1rem;
+    }
+    
+    .portfolio-section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .portfolio-item {
+        width: 250px;
+    }
+    
+    .portfolio-image img {
+        height: 200px;
+    }
+    
+    .modal-body {
+        padding: 1.5rem;
+    }
+    
+    #modal-main-image {
+        max-height: 400px;
+    }
+/* 删除多余的大括号 */
+
+@media (max-width: 480px) {
+    .category-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .portfolio-container {
+        gap: 1rem;
+    }
+    
+    .portfolio-item {
+        width: 220px;
+    }
+    
+    .portfolio-image img {
+        height: 180px;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+    
+    .modal-body {
+        padding: 1rem;
+    }
+    
+    .modal-body h2 {
+        font-size: 1.4rem;
+    }
+    
+    #modal-main-image {
+        max-height: 300px;
+    }
+    
+    .modal-thumbnail {
+        width: 80px;
+        height: 60px;
+    }
+}

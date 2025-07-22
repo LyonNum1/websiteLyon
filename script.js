@@ -27,8 +27,24 @@ document.addEventListener('DOMContentLoaded', function() {
                         behavior: 'smooth'
                     });
                 }
+                
+                // 在移动设备上点击导航链接后关闭菜单
+                const mainNav = document.getElementById('main-nav');
+                if (mainNav && mainNav.classList.contains('active')) {
+                    mainNav.classList.remove('active');
+                }
             });
         });
+        
+        // 汉堡菜单点击事件
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+        
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', function() {
+                mainNav.classList.toggle('active');
+            });
+        }
         
         // 滚动时更新导航状态和回到顶部按钮
         window.addEventListener('scroll', function() {

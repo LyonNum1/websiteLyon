@@ -130,6 +130,14 @@ header {
     color: #333;
 }
 
+/* 汉堡菜单按钮 */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333;
+}
+
 /* 导航样式 */
 .category-nav {
     display: flex;
@@ -484,13 +492,47 @@ footer {
 }
 
 @media (max-width: 768px) {
+    /* 导航栏样式调整 */
+    .menu-toggle {
+        display: block;
+    }
+    
+    nav#main-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    
+    nav#main-nav.active {
+        max-height: 500px;
+    }
+    
     .category-nav {
-        gap: 0.8rem;
+        flex-direction: column;
+        gap: 0;
+        padding: 0.5rem 0;
+    }
+    
+    .category-nav li {
+        width: 100%;
+        text-align: center;
     }
     
     .category-nav li a {
-        padding: 0.4rem 0.6rem;
+        padding: 0.8rem 1rem;
         font-size: 0.9rem;
+        display: block;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .category-nav li:last-child a {
+        border-bottom: none;
     }
     
     .gallery-container {
@@ -605,11 +647,6 @@ footer {
 /* 删除多余的大括号 */
 
 @media (max-width: 480px) {
-    .category-nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-    }
     
     .portfolio-container {
         gap: 1rem;

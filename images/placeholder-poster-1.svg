@@ -1,0 +1,25 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f0f0f0"/>
+  
+  <!-- 海报设计元素 -->
+  <rect x="100" y="100" width="600" height="400" fill="#4a90e2" rx="10" ry="10"/>
+  
+  <!-- 文字区域 -->
+  <rect x="150" y="250" width="500" height="200" fill="rgba(255,255,255,0.9)" rx="5" ry="5"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="200" font-family="Arial" font-size="40" font-weight="bold" text-anchor="middle" fill="#ffffff">海报设计作品1</text>
+  
+  <!-- 描述文字 -->
+  <text x="400" y="300" font-family="Arial" font-size="20" text-anchor="middle" fill="#333333">环保主题海报设计</text>
+  <text x="400" y="340" font-family="Arial" font-size="16" text-anchor="middle" fill="#555555">通过简洁的视觉元素和强烈的色彩对比</text>
+  <text x="400" y="370" font-family="Arial" font-size="16" text-anchor="middle" fill="#555555">传达出保护地球的重要信息</text>
+  
+  <!-- 装饰元素 -->
+  <circle cx="250" cy="150" r="30" fill="#ffffff" opacity="0.7"/>
+  <circle cx="550" cy="150" r="20" fill="#ffffff" opacity="0.5"/>
+  
+  <!-- 水印 -->
+  <text x="400" y="550" font-family="Arial" font-size="14" text-anchor="middle" fill="#999999">示例图片 - 仅用于展示</text>
+</svg>
